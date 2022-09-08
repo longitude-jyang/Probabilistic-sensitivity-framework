@@ -15,7 +15,7 @@ The utility function $U$ represents a wide range of metrics, including the momen
 
 # 2. Demonstration examples 
 
-To implement the numerical case studies, you need to download the sensitivity code of [TEDS](/../../../../longitude-jyang/TEDS-ToolboxEngineeringDesignSensitivity) from a different repository. The three cases studies call TEDS for the sensitivity analysis. The functions for the three cases are [call_caseNo1.m](/code/call_caseNo1.m) etc
+To implement the numerical case studies, you need to download the sensitivity code of [TEDS](/../../../../longitude-jyang/TEDS-ToolboxEngineeringDesignSensitivity) from a different repository. The three cases studies call TEDS for the sensitivity analysis. The functions for the three cases are [call_caseNo1.m](/code/call_caseNo1.m) etc. For case 2 and 3, the hydrodynamic code [CHAOS](https://github.com/longitude-jyang/hydro-suite) is used. In addition, for case 2, the fatigue failure results are based on 5000 Monte Carlo simulations. The MC data is saved as *.mat file (~450 MB) and it can be found [here](https://www.dropbox.com/s/h5apdcgymz4yzfc/MR_RS2_FATIGUE_N5000_11-06-2020%2008-26.mat?dl=0). These data is necessary to reproduce the results for Case 2. 
   
 ## 2.1 Case-1 
 
