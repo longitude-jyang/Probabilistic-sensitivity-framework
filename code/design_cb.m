@@ -15,10 +15,11 @@ thickness = xS(5);
 
 zeta = 0.1;
 
+
 m = rho*width*thickness ; 
 I = 1/12*width*thickness^3;
 
-Nmode = 3; 
+Nmode = 1; 
 beta_v =[1.875 ;  4.694 ; 7.855]/L; 
 
 
@@ -40,7 +41,11 @@ for ii = 1 : Nmode
     % natural frequency
     om_n = (beta*L)^2*sqrt(E*I/(m*L^4));
 
-    C = 1;
+%     % damping 
+%     zeta = 0.01/(2*om_n) + 1e-4 * om_n/2;
+
+    % modal constant
+    C = cal_C (beta,L,m);
 
     % displacement
     phi_x =  (1./(sin(beta*L) - sinh(beta*L))).*...
